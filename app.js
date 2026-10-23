@@ -229,3 +229,14 @@ document.addEventListener("visibilitychange", () => {
   }
 });
 wakeSignal();
+
+const phoneLayout = matchMedia("(max-width: 900px), (max-width: 1000px) and (pointer: coarse)");
+const originalParent = host.parentNode, originalNext = host.nextSibling;
+function positionBoard() {
+  if (phoneLayout.matches) document.querySelector(".hero-copy").after(host);
+  else originalParent.insertBefore(host, originalNext);
+  measure();
+  wakeSignal();
+}
+phoneLayout.addEventListener("change", positionBoard);
+positionBoard();

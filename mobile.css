@@ -1,0 +1,47 @@
+
+@media (max-width: 900px), (max-width: 1000px) and (pointer: coarse) {
+  html { scroll-padding-top: 28px; }
+  body { -webkit-text-size-adjust: 100%; }
+  header { height: auto; min-height: 82px; padding: calc(16px + env(safe-area-inset-top)) 22px 16px; }
+  .status { display: none; }
+  .header-cta { min-height: 44px; gap: 18px; font-size: 12px; }
+  .hero { height: auto; min-height: 0; padding: 30px 22px 46px; }
+  .micro { font-size: 9px; gap: 12px; }
+  .hero h1 { font-size: clamp(56px, 15.2vw, 110px); max-width: none; margin: 34px 0 24px; line-height: 1; white-space: normal; }
+  .hero h1 em { display: block; font-size: 1.5em; }
+  .hero-copy { font-size: 15px; line-height: 1.65; margin: 0; }
+  .scene { position: relative; inset: auto; width: 100%; height: auto; padding: 0; margin: 32px 0 0; }
+  .signal-board { position: static; width: 100%; height: auto; transform: none; }
+  .signal-board svg { height: auto; min-height: 0; aspect-ratio: 1.7; display: block; }
+  .board-foot { display: flex; flex-wrap: wrap; gap: 12px; font-size: 10px; padding: 14px 4px; }
+  .hero-foot { position: static; display: flex; margin: 26px 0 0; }
+  .hero-foot > span, .hero-foot > b { display: none; }
+  .scroll-link { min-height: 44px; }
+  .system { display: block; min-height: 0; padding: 52px 22px; }
+  .system h2 { font-size: clamp(52px, 14vw, 100px); line-height: 1; }
+  .system > p { font-size: 15px; line-height: 1.65; }
+  .system-notes { margin-top: 36px; display: block; }
+  .system-notes article, .system-notes article + article { padding: 22px 0; border-left: 0; border-bottom: 1px solid #a0ac96; }
+  .system-notes article p { font-size: 14px; line-height: 1.65; }
+  .lab, .brief { padding: 52px 22px; }
+  .lab-head, .lab-grid, .brief-grid { display: block; }
+  .lab-head h2 { font-size: clamp(48px, 13.5vw, 90px); }
+  .lab-head p { margin: 24px 0; font-size: 14px; }
+  .lab-grid { margin-top: 32px; }
+  .terminal { margin-top: 32px; }
+  .two { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; }
+  input, textarea { font-size: 16px; }
+  .run-buttons { display: flex; flex-wrap: wrap; gap: 8px; }
+  .run-buttons button { min-height: 44px; font-size: 12px; }
+  .brief h2 { font-size: clamp(52px, 14vw, 100px); }
+  .brief form { margin-top: 34px; }
+  footer { padding: 32px 22px calc(24px + env(safe-area-inset-bottom)); flex-wrap: wrap; gap: 22px; }
+  footer > * { min-width: 0; }
+}
+
+@media (max-width: 900px), (max-width: 1000px) and (pointer: coarse) {
+  .chapter, .closing, footer, .hero, .system, .lab, .brief {
+    padding-left: max(22px, env(safe-area-inset-left));
+    padding-right: max(22px, env(safe-area-inset-right));
+  }
+}
